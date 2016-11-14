@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vcarbone <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/10 11:50:18 by vcarbone          #+#    #+#             */
-/*   Updated: 2016/11/10 11:50:21 by vcarbone         ###   ########.fr       */
+/*   Created: 2016/11/14 13:31:49 by vcarbone          #+#    #+#             */
+/*   Updated: 2016/11/14 18:55:41 by vcarbone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-char	*ft_strncpy(char *dst, const char *src, size_t len)
+int		ft_isalpha(int c)
 {
-	size_t i;
-
-	i = 0;
-	while (i < len && src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	if (i < len)
-	{
-		while (dst[i] != '\0')
-		{
-			dst[i] = '\0';
-			i++;
-		}
-	}
-	return (dst);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
