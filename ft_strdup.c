@@ -6,7 +6,7 @@
 /*   By: vcarbone <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 11:50:04 by vcarbone          #+#    #+#             */
-/*   Updated: 2016/11/10 14:52:35 by vcarbone         ###   ########.fr       */
+/*   Updated: 2016/11/16 18:05:14 by vcarbone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strdup(const char *s1)
 	char	*s2;
 
 	len = ft_strlen(s1);
-	if (!s1)
-		return (NULL);
 	s2 = malloc(sizeof(char*) * (len + 1));
+	if (!s2)
+		return (NULL);
 	ft_strcpy(s2, s1);
 	return (s2);
 }

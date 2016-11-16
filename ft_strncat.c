@@ -6,7 +6,7 @@
 /*   By: vcarbone <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 11:08:02 by vcarbone          #+#    #+#             */
-/*   Updated: 2016/11/14 15:12:01 by vcarbone         ###   ########.fr       */
+/*   Updated: 2016/11/16 16:31:30 by vcarbone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	int i;
-	int len;
+	size_t	i;
+	int		len;
 
 	len = ft_strlen(s1);
 	i = 0;
